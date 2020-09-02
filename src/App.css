@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.outsideLayer {
+  margin: 30px 50px;  
+  height:83vh;
+}
+.menuAndName {
+  position:center;
+}
+#menuBar {
+  margin-left:auto;
+  margin-right:auto;
+  border-spacing: 35px 0px;
+}
+#menuBar th {
+  font-family:"Overpass", sans-serif;
+  font-weight:300;
+
+}
+#name {
+  position:absolute;
+  left:50px;
+  font-family:"Overpass", sans-serif;
+  font-weight:600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logoLinks{
+  position:absolute;  
+  right:0%;
+  padding:5px;
+  top:50%;
+}
+.navLink {
+  text-decoration: none;
+  color:black;
+}
+.navLink:visited {
+  color:black;
+}
+.navLink:hover {
+  color:rgb(236, 92, 102);
+}
+.navLink:active {
+  color:rgb(236, 92, 102);
+}
+.intextLink {
+  text-decoration: none;
+  color:rgb(193, 63, 96);
+}
+.intextLink:visited {
+  color:rgb(193, 63, 96);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intextLink:hover {
+  color:rgb(236, 92, 102)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
