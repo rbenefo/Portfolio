@@ -38,7 +38,7 @@ class workPage extends Component {
         <div id = "workBodySection">
           <span>
           <h1>MY WORK</h1>
-          My work has centered on a range of topics: design, product management, software and mechanical engineering, and writing.
+          My work has spanned a range of disciplines: design, product management, software and mechanical engineering, and writing.
           Take a look below!
           </span>
         </div>
@@ -171,7 +171,7 @@ class workPage extends Component {
               <tr>
               <td colspan ="3">
               I spent the first half of the summer of 2020 learning how to do web development with my friend Wes.
-              Neither of us had much experience with software or web development, but were keen to learn.
+              Neither of us had much experience with software or web development, but we were keen to learn.
               We built the reader from the ground up, developing native PDF editing and visualization
               packages to give us full control over PDF rendering. We also included a number of smart features:
               smart search, and sentence similarity, to upgrade the PDF viewing experience. Over the summer,

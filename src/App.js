@@ -43,7 +43,7 @@ class App extends Component {
           <tr>
             <NavLink to="/" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }} exact={true}><th>ABOUT</th></NavLink>
             <NavLink to="/work" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}><th>WORK</th></NavLink>
-            <NavLink to="/blog" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}><th>BLOG</th></NavLink>
+            {/* <NavLink to="/blog" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}><th>BLOG</th></NavLink> */}
           </tr>
           </tbody>
 
@@ -56,9 +56,9 @@ class App extends Component {
           <Route path="/work">
             <WorkPage />
           </Route>
-          <Route path="/blog">
+          {/* <Route path="/blog">
             <BlogPage />
-          </Route>
+          </Route> */}
 
         </Switch>
         </Router>
