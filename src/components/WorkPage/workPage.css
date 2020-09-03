@@ -4,7 +4,7 @@
   scrollbar-width: none;  /* Firefox */
   margin-top:10px;
   margin-bottom:10px;
-  overflow-y:scroll;
+  overflow-y:auto;
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
   -moz-animation: fadeIn ease 1s;
@@ -12,6 +12,7 @@
   -ms-animation: fadeIn ease 1s;
   padding-left:50px;
   padding-right:50px;
+  background-color: rgb(250, 250, 250);
 }
 
 @keyframes fadeIn {
@@ -106,7 +107,6 @@
 }
 
 #workBodySection2 {
-  height:100%;
 }
 #workBodySection span h1 {
   font-family:"Overpass", sans-serif;
@@ -170,3 +170,10 @@
 
 
  /*** END POPUP CSS ***/
+
+ #workScroll {
+  position:absolute;
+  top:77%;
+  left:5%;
+}
+

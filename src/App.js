@@ -41,8 +41,8 @@ class App extends Component {
         <tbody>
 
           <tr>
-            <NavLink to="/" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }} exact={true}><th>ABOUT</th></NavLink>
-            <NavLink to="/work" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}><th>WORK</th></NavLink>
+          <th> <NavLink to="/" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }} exact={true}>ABOUT</NavLink></th>
+          <th> <NavLink to="/work" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}>WORK</NavLink></th>
             {/* <NavLink to="/blog" className = "navLink" activeStyle={{ color: 'rgb(236, 92, 102)' }}><th>BLOG</th></NavLink> */}
           </tr>
           </tbody>

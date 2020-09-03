@@ -12,6 +12,7 @@ import virtOfficeLogo from "../../assets/images/virtOfficeLogo.png"
 import seniorDesignLogo from "../../assets/images/seniorDesignLogo.png"
 import aircraftLogo from "../../assets/images/aircraftLogo.png"
 import graphicDesignLogo from "../../assets/images/graphicDesignLogo.png"
+import scroll from "../../assets/images/blackScroll.png";
 
 import './workPage.css';
 
@@ -22,6 +23,24 @@ class workPage extends Component {
     };
 
   }
+  componentDidMount() {
+    let elem = document.getElementById("workBodySection2")
+    elem.addEventListener("mousewheel", this.handleWorkScroll);
+    elem.addEventListener("scroll", this.handleWorkScroll);
+  }
+  componentWillUnmount() {
+    let elem = document.getElementById("workBodySection2")
+    elem.removeEventListener("mousewheel", this.handleWorkScroll);
+    elem.removeEventListener("scroll", this.handleWorkScroll);
+  }
+
+  handleWorkScroll(e) {
+    let elem = document.getElementsByClassName("workBody");
+    let scrollPercent = (elem[0].scrollTop)/(elem[0].scrollHeight - elem[0].clientHeight);
+    let scrollNotif = document.getElementById("workScroll");
+    scrollNotif.style.opacity = 1-scrollPercent;
+  }
+
 
   workPopUp= (elem) => {
     let el = document.getElementById(elem);
@@ -43,6 +62,8 @@ class workPage extends Component {
           </span>
         </div>
       <div id = "workBodySection2">
+      <img src = {scroll} id = "workScroll" width = "auto" height="100px" alt = ""/>
+
       <div id = "workGrid">
           <div onClick = {() => this.workPopUp('protDFPopUp')} className = "workGridBox">  
             <div className = "workGridImage" style ={{backgroundImage:`url(${protDFLogo})`}}>
@@ -95,12 +116,12 @@ class workPage extends Component {
               </th>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               <img src = {dlOfficeUIPic} width="100%" height="auto" alt = ""/>
               </td>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               As an intern at Deeplocal, I worked with two designers to create the company's <a href = "https://virtualoffice-285701.ue.r.appspot.com/" className = "intextLink">Virtual Office</a>. We designed 
               the webapp to also help company employees feel connected to the company while working from home during the COVID pandemic–
               the building reacts to data inputs from the new platform for office banter: Slack. We also 
@@ -130,12 +151,12 @@ class workPage extends Component {
               </th>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               <img src = {endeavor} width="100%" height="auto" alt = ""/>
               </td>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               I spent three semesters at Penn leading the aircraft team of the Penn Aerospace Club. While 
               lead, I oversaw the design, construction of three UAVs: Herbat, Endeavor, and Boing. Pictured above is
               Endeavor, a lightweight carbon fiber and balsa wood pusher UAV, designed to have a cruising speed of 20 mph and weigh 
@@ -165,11 +186,11 @@ class workPage extends Component {
               </th>
               </tr>
               <tr>
-              <td colspan ="3" className = "popUpImage" style ={{backgroundImage:`url(${protDF})`, backgroundPosition: "50% 0%"}}>
+              <td colSpan ="3" className = "popUpImage" style ={{backgroundImage:`url(${protDF})`, backgroundPosition: "50% 0%"}}>
               </td>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               I spent the first half of the summer of 2020 learning how to do web development with my friend Wes.
               Neither of us had much experience with software or web development, but we were keen to learn.
               We built the reader from the ground up, developing native PDF editing and visualization
@@ -202,12 +223,12 @@ class workPage extends Component {
               </th>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               <img src = {seniorDesign} width="100%" height="auto" alt = ""/>
               </td>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               For our Senior Design project, my friends and I created an underwater pollution collection platform we
               called Free Willy. The platform was designed to be as modular as possible to increase its use cases, with 
               collection filters that could be easily swapped out to collect different kinds of pollutants. I worked on
@@ -238,12 +259,12 @@ class workPage extends Component {
               </th>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               <img src = {graphicDesign} width="100%" height="auto" alt = ""/>
               </td>
               </tr>
               <tr>
-              <td colspan ="3">
+              <td colSpan ="3">
               I ran the design team of the Penn Science Magazine while at Penn, where I taught my team of 
               designers how to create compelling and beautiful graphics to accompany the student research
               and articles in the magazine. I personally created the covers and tables of contents for the magazine's Fall

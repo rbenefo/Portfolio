@@ -15,12 +15,15 @@ export default class AboutBody extends React.Component {
     }
     componentDidMount() {
       window.addEventListener("mousewheel", this.handleScroll);
+      window.addEventListener("scroll", this.handleScroll);
+
     }
     componentWillUnmount() {
       window.removeEventListener("mousewheel", this.handleScroll);
+      window.removeEventListener("scroll", this.handleScroll);
     }
 
-    handleScroll(e) {
+    handleScroll() {
       console.log("scroll!!")
       let title = document.getElementById("aboutHello");
       title.classList.add("upNAway")
