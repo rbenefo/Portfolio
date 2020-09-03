@@ -24,14 +24,14 @@ class workPage extends Component {
 
   }
   componentDidMount() {
-    let elem = document.getElementById("workBodySection2")
-    elem.addEventListener("mousewheel", this.handleWorkScroll);
-    elem.addEventListener("scroll", this.handleWorkScroll);
+    let elem = document.getElementsByClassName("workBody")
+    elem[0].addEventListener("mousewheel", this.handleWorkScroll);
+    elem[0].addEventListener("scroll", this.handleWorkScroll);
   }
   componentWillUnmount() {
-    let elem = document.getElementById("workBodySection2")
-    elem.removeEventListener("mousewheel", this.handleWorkScroll);
-    elem.removeEventListener("scroll", this.handleWorkScroll);
+    let elem = document.getElementsByClassName("workBody")
+    elem[0].removeEventListener("mousewheel", this.handleWorkScroll);
+    elem[0].removeEventListener("scroll", this.handleWorkScroll);
   }
 
   handleWorkScroll(e) {
