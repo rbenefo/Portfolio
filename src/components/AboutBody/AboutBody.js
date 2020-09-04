@@ -56,7 +56,7 @@ export default class AboutBody extends React.Component {
           <img src = {scroll} id = "scroll" width = "auto" height="100px" alt = ""/>
 
           <div id = "aboutText">
-          I'm a masters student at Penn studying robotics engineering, and a 
+          I'm a Masters student at Penn studying robotics engineering, and a 
           fresh grad of Penn's M&amp;T program. As you can probably tell, I'm into all things space-related. 
           Also high up on my list are business strategy, design, philosophy, cycling, and chicken.
         </div>
