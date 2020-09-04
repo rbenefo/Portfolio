@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.06bf37a9.chunk.css",
+    "main.js": "/portfolio/static/js/main.171882eb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.171882eb.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.915b0d2e.chunk.js": "/portfolio/static/js/2.915b0d2e.chunk.js",
+    "static/js/2.915b0d2e.chunk.js.map": "/portfolio/static/js/2.915b0d2e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b44023515061298e84ca65e589f90d7f.js": "/portfolio/precache-manifest.b44023515061298e84ca65e589f90d7f.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.06bf37a9.chunk.css.map": "/portfolio/static/css/main.06bf37a9.chunk.css.map",
+    "static/js/2.915b0d2e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.915b0d2e.chunk.js.LICENSE.txt",
+    "static/media/aboutBackground.png": "/portfolio/static/media/aboutBackground.46bf92fc.png",
+    "static/media/dlOfficeUIPic.png": "/portfolio/static/media/dlOfficeUIPic.735936c4.png",
+    "static/media/endeavor.JPG": "/portfolio/static/media/endeavor.25c3c5ea.JPG",
+    "static/media/graphicDesign.png": "/portfolio/static/media/graphicDesign.e42abb11.png",
+    "static/media/protDF.png": "/portfolio/static/media/protDF.16a28046.png",
+    "static/media/reentryBurn.png": "/portfolio/static/media/reentryBurn.8bc1bd8f.png",
+    "static/media/seniorDesign.jpg": "/portfolio/static/media/seniorDesign.af4896f3.jpg",
+    "static/media/spacecraft.png": "/portfolio/static/media/spacecraft.7835ca44.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.915b0d2e.chunk.js",
+    "static/css/main.06bf37a9.chunk.css",
+    "static/js/main.171882eb.chunk.js"
+  ]
+}
